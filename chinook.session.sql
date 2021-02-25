@@ -36,4 +36,6 @@ JOIN Employee e
     ON e.EmployeeId = c.SupportRepId
 ORDER BY c.FirstName ASC
 
-
+SELECT COUNT (InvoiceDate)
+FROM Invoice i
+WHERE InvoiceDate LIKE '2009%' OR InvoiceDate LIKE '2011%' 
