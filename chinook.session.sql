@@ -11,3 +11,7 @@ FROM Customer c
 JOIN Invoice i
     ON c.CustomerId = i.CustomerId
 WHERE Country = "Brazil"
+
+SELECT EmployeeId, FirstName, LastName, Title
+FROM Employee
+WHERE Title = "Sales Support Agent"
