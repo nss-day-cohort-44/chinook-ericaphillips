@@ -74,4 +74,8 @@ JOIN Album
 JOIN Artist a
     ON a.ArtistId = Album.ArtistId
 ORDER BY InvoiceLineId ASC
+
+SELECT COUNT(BillingCountry), BillingCountry
+FROM Invoice
+GROUP BY BillingCountry
    
