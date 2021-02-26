@@ -50,4 +50,12 @@ SELECT SUM(total),
 FROM Invoice
 WHERE year == "2009" OR year == "2011"
 GROUP BY year;
+
+SELECT COUNT(InvoiceId)
+FROM InvoiceLine
+WHERE InvoiceId = 37
+
+SELECT COUNT(InvoiceId), InvoiceId
+FROM InvoiceLine
+GROUP BY InvoiceId
    
