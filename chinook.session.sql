@@ -58,4 +58,10 @@ WHERE InvoiceId = 37
 SELECT COUNT(InvoiceId), InvoiceId
 FROM InvoiceLine
 GROUP BY InvoiceId
+
+SELECT Name, InvoiceLineId
+FROM Track t
+JOIN InvoiceLine i
+    ON t.TrackId = i.TrackId
+ORDER BY InvoiceLineId ASC
    
